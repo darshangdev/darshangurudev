@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <title>Darshan Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshan | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    section {
+      padding: 80px 50px;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      border: none;
+      cursor: pointer;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello 👋 I'm Darshan</h1>
-  <p>Staff QA Manager | Automation | Playwright</p>
+
+<header>
+  <h1>Darshan</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hi, I'm <span>Darshan</span></h2>
+  <p>Staff QA Manager | Automation | Playwright Expert</p>
+  <button class="btn">View My Work</button>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I specialize in building scalable test automation frameworks and improving product quality.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">MPOS Automation</div>
+    <div class="card">MySpot Testing</div>
+    <div class="card">ROKER QA</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: darshan.gurudev@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Darshan</p>
+</footer>
+
 </body>
 </html>

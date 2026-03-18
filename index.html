@@ -1,56 +1,46 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darshan | Portfolio</title>
+  <title>Darshan — Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
-    }
-
     body {
-      background: #020617;
-      color: white;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 50px;
-      position: fixed;
-      width: 100%;
-      background: rgba(2,6,23,0.7);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-    }
-
-    header h1 {
-      background: linear-gradient(45deg, #38bdf8, #818cf8);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: white;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
     }
 
     section {
-      padding: 120px 50px;
+      padding: 120px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 72px;
+      font-weight: 700;
+      letter-spacing: -2px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      max-width: 600px;
     }
 
     .hero {
@@ -60,107 +50,98 @@
       justify-content: center;
     }
 
-    .hero h2 {
-      font-size: 50px;
+    .hero p {
+      font-size: 22px;
     }
 
-    .hero span {
-      color: #38bdf8;
+    .projects div {
+      margin-bottom: 40px;
     }
 
-    .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: linear-gradient(45deg, #38bdf8, #818cf8);
-      border: none;
-      cursor: pointer;
-      border-radius: 25px;
-      color: white;
-      transition: 0.3s;
+    .project-title {
+      font-size: 24px;
+      font-weight: 600;
     }
 
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    .about, .projects, .contact {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 15px;
-      padding: 20px;
-      backdrop-filter: blur(10px);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      background: rgba(255,255,255,0.1);
+    .skills span {
+      display: inline-block;
+      border: 1px solid #ddd;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      opacity: 0.6;
+      padding: 60px 20px;
+      color: #888;
+      font-size: 14px;
     }
   </style>
+
 </head>
 
 <body>
 
-<header>
-  <h1>Darshan</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<!-- HERO -->
 
 <section class="hero">
-  <h2>Hi, I'm <span>Darshan</span></h2>
-  <p>Staff QA Manager | Automation | Playwright</p>
-  <button class="btn" onclick="scrollToProjects()">View My Work</button>
+  <h1>Darshan</h1>
+  <p>Staff QA Manager building scalable automation systems.</p>
 </section>
 
-<section id="about" class="about">
-  <h2>About Me</h2>
-  <p>I build scalable automation frameworks using Playwright and improve product quality across platforms.</p>
+<!-- ABOUT -->
+
+<section>
+  <h2>About</h2>
+  <p>
+    I design and build scalable test automation frameworks using Playwright and JMeter.
+    I focus on performance, reliability, and delivering high-quality software at scale.
+  </p>
 </section>
 
-<section id="projects" class="projects">
+<!-- PROJECTS -->
+
+<section class="projects">
   <h2>Projects</h2>
-  <div class="projects-grid">
-    <div class="card">MPOS Automation Framework</div>
-    <div class="card">MySpot QA System</div>
-    <div class="card">ROKER Platform Testing</div>
+
+  <div>
+    <div class="project-title">MPOS</div>
+    <p>Automation and testing for payment systems.</p>
   </div>
+
+  <div>
+    <div class="project-title">MySpot</div>
+    <p>End-to-end testing and product validation.</p>
+  </div>
+
+  <div>
+    <div class="project-title">Parking.com</div>
+    <p>Improved responsiveness and AVS updates.</p>
+  </div>
+
 </section>
 
-<section id="contact" class="contact">
+<!-- SKILLS -->
+
+<section class="skills">
+  <h2>Skills</h2>
+
+<span>Playwright</span> <span>JavaScript</span> <span>JMeter</span> <span>API Testing</span> <span>Automation Frameworks</span>
+
+</section>
+
+<!-- CONTACT -->
+
+<section>
   <h2>Contact</h2>
   <p>Email: darshan.gurudev@gmail.com</p>
 </section>
 
 <footer>
-  <p>© 2026 Darshan</p>
+  © 2026 Darshan
 </footer>
-
-<script>
-  function scrollToProjects() {
-    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-  }
-</script>
 
 </body>
 </html>
